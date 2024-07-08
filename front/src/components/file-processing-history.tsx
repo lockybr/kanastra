@@ -33,9 +33,6 @@ const FileProcessingHistory = () => {
         const response = await getHistory();
 
         history = response.data
-        console.log('**** HISTORY ****')
-        console.log(response.data)
-        console.log('****')
       } catch (ex) {
         toast({
           description: 'Erro ao buscar histórico de processamento',
